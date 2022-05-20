@@ -1,0 +1,139 @@
+body{
+    background-color: #e9eaeb;
+}
+nav{
+    background-color: #fff;
+}
+nav a{
+        color: #5f6162;
+}
+.upNav a img{
+    width: 40px;
+}
+.upNav{
+   
+border-bottom: 1px solid #e8ebed;
+}
+.navbar button {
+    color: #5f6162;
+}
+.unddMain img{
+ width:100%;
+    height: 100%;
+}
+.upMain .textImg{
+    
+    display:block;
+      position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+
+}
+.upMain .textImg h6{
+    display: none;
+}
+.upMain .h {
+    position: relative;
+    
+   
+}
+.upMain .h img{
+    box-shadow: 5px 5px #ddd9d9;
+}
+.upMain .unddMain img{
+    width: 100%;
+    height: 288px;
+}
+.upMain .h:hover .textImg{
+      display:block;
+      position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: #007bff;
+    transition: .50s;
+}
+.upMain .h:hover .textImg h6{
+    display: block;
+    color: #fff;
+}
+.typeNews{
+    background-color: #fff;
+}
+.typeNews button {
+    color: #5f6162;
+}
+.popularPosts{
+    background-color: #fff;
+}
+.leftSide{
+    border: 1px solid #bcbfc1;
+}
+.upLeftSide {
+}
+.leftSide .upLeftSide{
+    border-bottom: 1px solid #bcbfc1;
+    color: #444546;
+}
+.leftSide .upLeftSide a{
+    color: #444546;
+    text-decoration: none;
+}
+.leftSide .upLeftSide a span{
+    color: #8a9090;
+}
+.leftSide .upLeftSide nav a{
+    font-size: 16px;
+}
+.downLeftSide h6{
+    font-size: 12px;
+}
+.rightSide{
+    border: 1px solid #bcbfc1;
+}
+.rightSide .upRightSide {
+      border-bottom: 1px solid #bcbfc1;
+
+    color: #444546;
+}
+.downRightSide h6{
+    font-size: 12px;
+}
+.downRightSide h5{
+    font-size: 16px;
+}
+.typeNews button{
+    margin-right: 60%;
+}
+
+.more{
+ border-top: 1px solid #bcbfc1;
+}
+.more a{
+    color: #161639;
+    text-decoration: none;
+}
+.popularPosts .pop{
+    width: 100%;
+          border-bottom: 1px solid #bcbfc1; 
+}
+.popularPosts h6{
+     font-size: 12px;
+}
+footer{
+    background-color: #191818;
+     color:#6f6d6d;
+}
+footer a{
+    color:#fff;
+}
+footer li{
+    padding-top: 10px;
+}
+@media (min-width: 700px) {
+    .upMain .unddMain img{
+    width: 100%;
+    
+}
+    
+}
