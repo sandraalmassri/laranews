@@ -33,12 +33,6 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
-Route::get('/createcategory', function () {
-    return view('cms.categories.create');
-});
-Route::get('/addpost', function () {
-    return view('cms.posts.create');
-});
 
 
 Route::prefix('cms/')->middleware('guest:admin,user')->group(function () {
@@ -55,9 +49,12 @@ Route::prefix('cms/')->middleware('guest:admin,user')->group(function () {
 
 Route::prefix('cms/admin')->middleware(['auth:admin'])->group(function () {
     Route::resource('admins', AdminController::class);
-    Route::resource('categories', CategoryController::class);
-    Route::resource('categories.create', CategoryController::class);
+    // Route::resource('categories', CategoryController::class);
+    // Route::resource('categories.create', CategoryController::class);
     Route::resource('posts', ProductController::class);
+    Route::get('categories/create', [CategoryController::class, 'create'])->name('categories.create');
+Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
+
 
     Route::resource('roles', RoleController::class);
     Route::resource('permissions', PermissionController::class);
